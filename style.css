@@ -4,10 +4,11 @@ body, html {
 }
 
 nav {
-  height: 80px;
+  height: 180px;
   background: #008080;
-  display: flex;
-  justify-content: space-between;
+  display: content;
+  justify-content: flex-end;
+  align-items: center;
   font-size: 32px;
   color: #333;
   text-align: center;
