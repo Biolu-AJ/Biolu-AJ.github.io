@@ -9,9 +9,9 @@ nav {
   display: content;
   justify-content: flex-end;
   align-items: center;
-  font-size: 32px;
+  font-size: 26px;
   color: #333;
-  text-align: center;
+  text-align: right;
   padding: 0rem calc((100vw -1300px)/2);
 }
 
