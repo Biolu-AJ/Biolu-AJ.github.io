@@ -3,9 +3,19 @@ body, html {
   padding: 0;
 }
 
+nav {
+  height: 80px;
+  background: #008080;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  padding: 0rem calc((100vw -1300px)/2);
+}
 
 body {
-  background-color: #f5f5f5;
+  background-color: #F0FFFF;
 }
 
 .container {
@@ -17,6 +27,20 @@ body {
 
 h1 {
   font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
   color: #333;
   text-align: center;
   margin-bottom: 20px;
