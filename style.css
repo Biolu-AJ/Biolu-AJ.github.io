@@ -4,7 +4,7 @@ body, html {
 }
 
 nav {
-  height: 180px;
+  height: 120px;
   background: #008080;
   display: content;
   justify-content: flex-end;
