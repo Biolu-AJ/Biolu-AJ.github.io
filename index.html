@@ -1,62 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <nav>
-            <ul>
-                <title>Nimi's Portfolio</title>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </ul>
-        </nav>
-    <link rel="stylesheet" href="style.css">
+<title>Nimi'S Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
 </head>
-<body>
-    <header>
-        <h1>Nimi's Projects</h1>
-    </header>
+<body class="w3-black">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Oluwalonimi, but most people call me Nimi instead. I'm a mechanical engineering student with an interest in the integration of artificial intelligence in robotics. I created this portfolio as a means to give constant updates on the various projects i'm working on</p>
-    </section>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+ 
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>RC_Camera</h3>
-            <p>Description of project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Custom brake tool</h3>
-            <p>Description of project 2.</p>
-        </div>
-        <div class="project">
-            <h3>Paint line fixture</h3>
-            <p>Description of project 3.</p>
-        </div>
-    </section>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Oluwalonimi</span> Ajayi.</h1>
+    <p>Mechanical Engineering Portfolio</p>
+    <img src="" alt="background" class="w3-image" width="992" height="1108">
+  </header>
 
-    <footer>
-        <p>Copyright &copy; 2024 Oluwalonimi Ajayi</p>
-    </footer>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-white w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">I'm Nimi</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I'm a Mechanical Engineering undergraduate student at the University of Manitoba.
+    </p>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2+</span><br>
+        Bajas made
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">20+</span><br>
+        Subassemblies
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">100+</span><br>
+        Drawings
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">130+</span><br>
+        Sheet Metal Parts
+      </div>
+    </div>
+  
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="projects">
+    <h2 class="w3-text-light-grey">My Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
 
-    <script src="script.js"></script>
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+    Paint LIne Fixture
+      <div class="w3-third">
+      What?
+        <ul>
+                <li>Design a new fixture for harrow sections which go through the paint line(blast, paint and oven) while reducing handling time</li>
+                <li>Minimize paint defects caused by contact points on the section</li>
+                <li>Ensure fixture allows for rotation of section as different operations have different requirements</li>
+                <li>Apply proper tolerances as layers of paint will be constantly added to the fixture and it’ll undergo thermal expansion in the oven</li>
+            
+        </ul>
+      </div>
+
+      <div class="w3-third">
+      How?
+       <ul>
+       		<li>Eliminated bolts by using a gravity-based system and using FEA to keep the fixture light but stiff</li>
+         	<li>Fixed the axis of rotation to the center of gravity of the section and fixture to reduce effort required to rotate the 277lb section</li>
+         	<li>Implemented DFM and DFA principles to ensure all 16 fixtures can be made quickly and accurately</li>
+         	<li>Reused T-bar and other equipment already available on the paint line to reduce time spent taking specialized fixtures on and off</li>  
+       </ul>
+      </div>
+      <div class="w3-third">
+      Why?
+      <ul>
+      		<li>Multi-part fixture with combined weight of 47lbs that goes on and off the paint line within eight minutes compared to a previous estimated time of 2 hours</li>
+        	<li>Reduction in the average number of paint reworks as power tools are no longer needed</li>
+        	<li>Final design is able to handle loads in both orientations with a minimum factor of safety of 3 </li>
+      </ul> 
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+  
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> <p>Email: <a href="mailto:bioluajayi@gmail.com">bioluajayi@gmail.com</a></p></p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
 </html>
