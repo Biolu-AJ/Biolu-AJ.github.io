@@ -210,18 +210,46 @@
         <p>
         The following paragraphs are to give more detailed information on the design process and the reasoning behind the decisions made along the way.
         I've decided to break the work up into major components and i'll add more details and sections as the design proceeds. 
-
-        <h3><u>Airframe</u></h3>
-        <!-- A decent portion of the more complex sizing for static and dynamic stabilty for the aircraft was done in collaboration with the UMSAE Aero team. To start the design, -->
-        <!-- we referenced the lift equation -->
-        TBA
-        <h3> <U>Payload</U></h3>
-        TBA
-        <h3> <U>Sensor Integration</U></h3>
-        TBA
-        <h3> <U>Path Planning</U></h3>
-        TBA
         </p>
+        <h3><u>Airframe & Aeroodynamic Design</u></h3>
+        <p>
+        The airframe design was mostly done in collaboration with the school's SAE Aero team -one of the best teams in North America. After multiple iterations, the final design settled on a 3-meter wingspan and a 0.25-meter chord length, 
+        using the NACA 4415 airfoil. This configuration provides sufficient lift at a cruise speed of 30 m/s. A higher aspect ratio was chosen to prioritize stability over maneuverability, as the drone will rotate in place using its VTOL motors to face the next target before transitioning into fixed-wing flight.
+        The control surfaces were sized to achieve positive static stability and neutral dynamic stability. Relying on the flight control system for dynamic stability simplified the analysis and design process.
+        </p>
+        <p>
+          The fuselage was designed to house all electronics while minimizng drag. To speed up the design process by relying less on CFD software, zebra stripes and curvature aalysis were used to ensure smooth transitions between surfaces while a focus was placed on minmizing the frontal area as much as possible.
+          The assumption was that better surface transitions, as indicated by more uniform light reflections, would translate to reduced drag by enabling smoother airflow.
+        </p>
+        <h3> <U>Structural & Manufacturing Considerations</U></h3>
+        <p>
+          The Quadplane's load-bearing structure consists of carbon fiber tubes connected with 3D printed attachments. Initially, compression-molded carbon fiber parts were considered, but budget constraints didn't allow for it.
+           A lightweight 3D printed(Foaming PLA) shell covers the structure to form the aerodynamic surface. It is assumed based on information i found online that  as long as the 3D printed shells are not bonded to the carbon fiber substructure, most of the load will be handled by the carbon fiber and the only "load" the skin will receive will be due to the displacement of the tubes. Other manufacturing methods, such as balsa wood with Ultrakote and full carbon fiber, were evaluated and remain potential alternatives for future iterations.
+          The major reason we decided to go with 3D printing was the speed at which we would be able to iterate and the relatively low cost, which is key considering that this is the first time the team is doing something of this scale.
+        </p>
+        <p>
+          The internal structure uses two carbon fiber tubes within each wing. The main load-bearing tube is positioned at the quarter chord, while a second tube prevents wing rotation. Hand calculations verified that the structure could withstand wing loading at 6 Gs. Vibration analysis was a key consideration — ensuring the natural frequency of the tubes exceeded expected motor-induced vibrations from the drone motors.
+          Thrust from the motors was treated as a static load, with the motors and propellers as the primary added mass. This analysis heavily influenced the carbon fiber tube selection.
+        </p>
+        <p>
+          The front of the fuselage is being developed as a crumple zone to protect valuable electronics in case of a crash. Since the 3D printed fuselage cannot withstand high loads, the goal is to extend the deceleration time during impact,
+          reducing forces based on Newton’s second law (F = ma). By increasing the duration of deceleration, the resulting force from a crash is reduced, helping to preserve the onboard systems.
+        </p>
+        <h3> <U>Electronics Integration & Sensor Placement</U></h3>
+        <p>
+          The electronics are mounted directly to the internal carbon fiber structure, not the fuselage. This allows the fuselage to remain lightweight with thinner walls.
+          The electronics package is designed to be installed through a bottom cutout, ensuring proper alignment within the structure.
+        </p>
+          <p>
+            Battery placement is adjustable to fine-tune the aircraft’s center of gravity (COG), with straps securing the batteries to allow for thermal expansion. The electronic speed controllers (ESCs) are positioned as low as possible,
+            close to the propellers, while the flight computer is located near the aircraft’s estimated COG. GPS and antennas are spaced apart to minimize interference.
+          </p>
+        <h3> <U>Payload: Water Tank Integration </U></h3>
+        <p>
+          The water tank design is ongoing. The current concept involves a ball joint at the aircraft and a hinge at the tank connection, connected by a carbon fiber tube. This configuration allows the aircraft to rotate independently of the tank.
+          Multi-axis rotary spring-damper systems are under consideration to improve stability and reduce vibrations. Each component is evaluated to ensure its weight is justified by its functional value, preventing unnecessary performance losses.
+        </p>
+        
           </div>
         </div>
       </div>
