@@ -211,7 +211,7 @@
         The following paragraphs are to give more detailed information on the design process and the reasoning behind the decisions made along the way.
         I've decided to break the work up into major components and i'll add more details and sections as the design proceeds. 
         </p>
-        <h3><u>Airframe & Aeroodynamic Design</u></h3>
+        <h3><u>Airframe & Aerodynamic Design</u></h3>
         <p>
         The airframe design was mostly done in collaboration with the school's SAE Aero team -one of the best teams in North America. After multiple iterations, the final design settled on a 3-meter wingspan and a 0.25-meter chord length, 
         using the NACA 4415 airfoil. This configuration provides sufficient lift at a cruise speed of 30 m/s. A higher aspect ratio was chosen to prioritize stability over maneuverability, as the drone will rotate in place using its VTOL motors to face the next target before transitioning into fixed-wing flight.
@@ -228,7 +228,7 @@
           The major reason we decided to go with 3D printing was the speed at which we would be able to iterate and the relatively low cost, which is key considering that this is the first time the team is doing something of this scale.
         </p>
         <p>
-          The internal structure uses two carbon fiber tubes within each wing. The main load-bearing tube is positioned at the quarter chord, while a second tube prevents wing rotation. Hand calculations verified that the structure could withstand wing loading at 6 Gs. Vibration analysis was a key consideration — ensuring the natural frequency of the tubes exceeded expected motor-induced vibrations from the drone motors.
+          The internal structure uses two carbon fiber tubes within each wing. The main load-bearing tube is positioned at the quarter chord, while a second tube prevents wing rotation. To validate the substructure, hand calculations were used to ensure that the structure could withstand wing loading at 6Gs, but the biggest concern for loading ended up being the vibration analysis. Hand calculations were used to ensure that the natural frequency of the tubes was higher than the expected vibration from the motors
           Thrust from the motors was treated as a static load, with the motors and propellers as the primary added mass. This analysis heavily influenced the carbon fiber tube selection.
         </p>
         <div class="swiper-slide d-flex justify-content-center">
