@@ -168,7 +168,10 @@
               <p>
               Problems Involved
               <ul>
-                <li>Design a simple underactuated hand that can be used as a test platform to understand the kinematics of underactuated linkages.</li>
+                <li>Design a biomimetic humanoid hand capable of adaptive grasping across varied object geometries while minimizing control complexity</li>
+                <li>Achieve natural finger motion with limited actuators (7 active DOF controlling 20 passive joints)</li>
+                <li>Integrate tactile feedback for slip detection and reactive grasp adjustment</li>
+                <li>Create a manufacturable design suitable for rapid prototyping and iterative testing with FDM printed and silicon molded parts</li>
               </ul>
               </p>
             </div>
@@ -181,8 +184,9 @@
           <p>
             Solutions Applied
             <ul>
-                <li>Used kevlar rope as the means of transmitting force from a power source to the end effector</li>
-                <li>Used rubber bands as the spring "antagonist" to eliminate the need for a reverse motion</li>
+                <li>Implemented cable-driven underactuation using Kevlar tendons with servo motors as agonists and elastic bands as antagonistic springs, with careful wire routing to avoid pinch points and binding</li>
+                <li>Designed custom 3D-printed universal joints to enable multi-axis finger articulation(flexion/extension and abduction/adduction) while ensuring assembly is possible</li>
+                <li>Integrated magnetometer-based tactile sensors (inspired by eFlesh research and designed in nTop) into fingertips for slip detection and force sensing</li>
             </ul>
           </p>
           </div>
@@ -192,7 +196,8 @@
           <p>
             End Results
             <ul>
-                <li> Design in progress, exact results TBA</li>
+                <li> Early testing has demonstrated succesful grasping with objects ranging from 8mm to 65mm in diameter with grip being the main cause of concern(currently looking into using silicon overmolds to increase grip)</li>
+                <li>More info to come as tests on grasp success rate, force sensing accuracy and torque bandwith are completed with the next design phase</li>
             </ul>
           </p>
           </div>  
@@ -206,9 +211,42 @@
           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
         <h2>Further details</h2>
         <p>
-        The following paragraphs are to give more detailed information on the design process and the reasoning behind the decisions made along the way.
-        
+        The following paragraphs are to give more detailed information on the design process and the reasoning behind the decisions made along the way. 
+        They have been broken up into section I believe cover the process that has governed the design so far.
         </p>
+            <h3>Design Philosophy & Requirements</h3>
+            <p>
+              I picked an underactuated system for the hand due to it's ability to achive maximal function with minimal complexity and cost. By reducing the traditional 20+ actuators required for full finger control to just 7 servo motors,
+              the system dramatically lowers manufacturing costs, simplifies control algorithms, and improves reliability. One of the aims of this project is to see if similar levels of dexterity can be attained with this underactuated system.
+              This approach leverages mechanical intelligence through cable-driven underactuation, where the hand naturally adapts to object geometry through passive joint coupling, eliminating the need for complex grasp planning while maintaining robust performance across many different objects.
+              The fully 3D-printable design (excluding standard fasteners) was specifically chosen to enable rapid prototyping and manufacturing accessibility, addressing both budget constraints and the need for iterative design validation.
+            </p>
+            <p>
+              A lot or the requirements are inspired by discussions I had with physical therapists and biomechanical engineers I was able to meet over a summer internship. They provided critical feedback on some important anatomical features I wasn't aware of that play important roles in everyday tasks like grabbing.
+              The system aims for a grip force of 25N per finger, 20kg payload capacity and torque bandwith of 10Hz. Manufacturing requirements prioritize standard FFF 3D printing capabilities with minimal post-processing, standard hardware components readily available through suppliers, and modular design enabling individual component replacement.
+            </p>
+            <h3>Mechanical Design Details</h3>
+            <p>
+              TBA
+            </p>
+            <h3>Sensor Integration</h3>
+            <p>
+              TBA
+            </p>
+            <h3>Manufacturing & Materials</h3>
+            <p>
+              TBA
+            </p>
+            <h3>Testing & Validation</h3>
+            <p>
+              TBA
+            </p>
+            <h3>Future Improvements</h3>
+            <ul>
+              <li>Integrate with OpenArm #01 to properly test dexterity</li>
+              <li>Source/design stronger actuators within similar size range </li>
+              <li>Test different sensor strategies</li>
+            </ul>
           </div>
         </div>
       </div>
